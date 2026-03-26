@@ -1,20 +1,20 @@
-# 🎡 Système de Gestion de Jeux Concours & Logistique (Leclerc)
+# 🛒 Analyse de la Performance des Campagnes de Fidélité (Carrefour)
 
-## 📝 Contexte du Projet
-Conception d'une base de données relationnelle pour automatiser la gestion des jeux concours "Fidélité" d'une enseigne de grande distribution. Le système gère l'inscription via borne interactive et la logistique des lots (voyages tout compris) en collaboration avec des agences partenaires.
+## 📌 Présentation
+Ce projet simule la gestion technique et l'analyse d'une campagne de jeux concours "Fidélité". L'objectif est de structurer les données issues des bornes interactives en magasin pour piloter la stratégie marketing et logistique.
 
-## 🏗️ Architecture de la Base de Données
-Le modèle est conçu pour assurer l'intégrité des données entre le parcours client et la réservation des gains :
+## ⚙️ Architecture SQL & Modélisation
+Conception d'une base de données relationnelle optimisée pour le reporting :
+- **Identification Client :** Liaison entre tickets de caisse et cartes de fidélité.
+- **Logistique des Gains :** Gestion des dotations (voyages) via des agences partenaires.
+- **Intégrité :** Utilisation de contraintes de clés pour garantir la fiabilité des données.
 
-- **Pôle Client & Participation :** Tables `Client` et `Magasin`. Gestion de l'identification unique via le scan du ticket de caisse et de la carte de fidélité.
-- **Pôle Récompense :** Tables `Voyage`, `Hotel`, `Lieu`. Centralisation des prestations "tout compris".
-- **Pôle Partenaires :** Table `Agence`. Suivi des réservations et des prestataires de services à bas prix.
+## 📊 Préparation au Reporting (BI)
+La base est conçue pour alimenter un dashboard de pilotage permettant de suivre :
+1. **Le Taux de Participation :** Analyse par zone géographique (Code Postal).
+2. **La Performance des Agences :** Répartition des lots par partenaire.
+3. **Le Profil des Gagnants :** Segmentation des clients ayant participé.
 
-## 🛠️ Fonctionnalités SQL démontrées
-- **Modélisation Relationnelle :** Mise en place de clés étrangères pour lier les participations aux lots.
-- **Requêtes Décisionnelles :** Extraction de listes de gagnants et statistiques de participation par code postal.
-- **Gestion Logistique :** Suivi des réservations de billets et d'hôtels liés à chaque jeu concours.
-
-## 🚀 Exemple de requête (Analyse Business)
-Le projet inclut des scripts permettant de vérifier le taux de remplissage des agences de voyage partenaires et la popularité des destinations proposées.
-
+## 🛠️ Stack
+- **Base de données :** SQL (PostgreSQL/MySQL)
+- **Outils :** Modélisation Relationnelle, Requêtes d'Agrégation.
