@@ -26,7 +26,4 @@ La structure permet d'alimenter des tableaux de bord pour suivre :
 
 ---
 
-### 📂 Structure du Dépôt
-* `/scripts/01_creation_table.sql` : Schéma de la base et contraintes d'intégrité.
-* `/scripts/02_insertion_data.sql` : Échantillons réels et scripts de génération massive.
-* `/scripts/03_analyses_kpi.sql` : Requêtes d'extraction pour le reporting.
+
